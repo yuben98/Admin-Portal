@@ -8,7 +8,8 @@ public class Part2 {
         catch(ClassNotFoundException e){
             System.out.println("Could not load driver");
         }
-        Connection conn= DriverManager.getConnection("jdbc:oracle:thin:@artemis.vsnet.gmu.edu:1521/vse18c.vsnet.gmu.edu", "abenlafq", "owoodseb");
+        // add your own parameters
+        Connection conn= DriverManager.getConnection("");
         new MainPage(conn);
     }
 }
